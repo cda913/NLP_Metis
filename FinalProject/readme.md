@@ -9,11 +9,11 @@ All posts that had a minimum of upvote score of 18 were downloaded from Reddit o
 ### Algorithms
 I cleaned the text to remove as many stop words as possible. I ran two separate tokenizers on the text. After tokenizing, I tested three classifiers each on the differently tokenized data. All combinations found different topics, but there were some overlaps. 
 
-All combinations found a general conversation topic. Most of the combinations found a topic focused on a yearly interactive activity run by the podcast: non-basketball “March Madness” where the fans vote to choose a director for the podcast to discuss. 
+All combinations found a general conversation topic. Four of the six combinations of tokenizer and learner found a topic focused on a yearly interactive activity run by the podcast: non-basketball “March Madness” where the fans vote to choose a director for the podcast to discuss. 
 
 With CountVectorizer as a tokenizer, all of the learning techniques found a topic about YouTube and a topic about Legos. 
 
-When the more stringent TfidfVectorizer was used to tokenize, it found neither the YouTube nor the Lego topic. However, it did find a topic about the movie Gemini Man.
+When the more stringent TfidfVectorizer was used to tokenize, none of the learners found the YouTube or the Lego topic. However, LSA did find a topic about the movie Gemini Man.
 ### Tools
 - psaw for downloading data
 - Numpy and pandas for data manipulation
